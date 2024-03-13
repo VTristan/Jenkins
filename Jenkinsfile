@@ -3,12 +3,14 @@ pipeline {
 
     tools {
     // Spécifiez l'installation de Maven configurée dans Jenkins
-        maven 'Maven 3.9.6'
+    //    maven 'Maven 3.9.6'
     }
 
     stages {
         stage('Build') {
             steps {
+                sh 'rm -rf Jenkins'
+                sh 'git clone https://github.com/VTristan/Jenkins.git'
                 sh 'mvn clean package'
             }
         }
