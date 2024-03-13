@@ -16,6 +16,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
+                echo 'todo'
                 // Ajoutez les étapes de déploiement si nécessaire
             }
         }
