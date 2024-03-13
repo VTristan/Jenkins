@@ -30,7 +30,9 @@ créer/affecter des roles par users
 trigger : sur echec/reussite/chaque cas:
 rendre les jobs dépendants les uns avec les autres
 ou remote url
+trigger commit
 
 cron : Heures, jours, périodes ...
 
+maven => test
 
