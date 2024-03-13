@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+    // Spécifiez l'installation de Maven configurée dans Jenkins
+        maven 'Maven 3.8.4'
+    }
+
     stages {
         stage('Build') {
             steps {
