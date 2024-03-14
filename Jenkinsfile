@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+
                 sh 'rm -rf Jenkins'
                 sh 'git clone https://github.com/VTristan/Jenkins.git'
                 sh 'mvn clean package'
